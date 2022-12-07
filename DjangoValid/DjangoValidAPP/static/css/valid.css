@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.input{
+    width:291px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    color: black;
+    border: 0 solid;
+    outline-style: none;
+}
+.form-reg__wrap{
+    background: rgb(58, 85, 155);
+    padding: 50px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    color:white;
+}
+.label{
+    padding-bottom: 7px;
+    font-size: 12px;
+}
+.row{
+    margin-bottom: 25px;
+    
+}
+.text-center{
+    text-align: center;
+}
+.form-reg__btn{
+    padding: 10px 70px;
+    border-radius: 10px;
+    border: 0;
+    background: white;
+    font-weight: 600;
+    margin-bottom: 30px;
+    box-shadow: 0px 24px 8px -8px rgba(27, 38, 47, 0.2);
+}
+.form-reg__title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.form-reg__subtitle{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.name__input::after{
+    content: ">";
+    background: url("../img/free-icon-font-user-3917688.svg");
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+.name__input{
+    display: flex;
+}
+.form-login__wrap{
+    background: rgb(58, 85, 155);
+    padding: 50px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-login__title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.form-login__subtitle{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.form-login__btn{
+    padding: 10px 70px;
+    border-radius: 10px;
+    border: 0;
+    background: white;
+    font-weight: 600;
+    margin-bottom: 30px;
+    box-shadow: 0px 24px 8px -8px rgba(27, 38, 47, 0.2);
+}
+.form-login__btn:last-child{
+    margin-top: 30px;
+    
+}
+.href__style{
+    display: flex;
+    flex-direction: row ;
+}
+.line-posit{
+    position: relative;
+    top:-9px;
+    border-bottom:2px solid white ;
+    width:40px
+}

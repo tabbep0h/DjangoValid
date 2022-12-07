@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/valid.css' %}">
+    <title>Sign</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="wrapper">
+            <div class="form-login__wrap">
+                <div class="form-login__title text text-center">Вход</div>
+                <div class="form-login__subtitle text text-center">Войдите в учетную запись</div>
+                {% for field in form1 %}
+                <div class="row">
+                    <div class = "text label">{{ field.label_tag}}</div>
+                    <div>{{field}}</div>
+                    {% if field.errors %}
+                    <div class="error">{{field.errors}}</div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+                <button class = "form-login__btn" text-center>Вход</button>
+                <div class="href__style">
+                    <div class = "line-before line-posit"></div>
+                    <p class = "form-reg__redirect text">Ещё не зарегистрированы?</p>
+                    <div class = "line-after line-posit"></div>
+                </div>
+                <button class = "form-login__btn" text-center><a href = "http://127.0.0.1:8000/reg/">Регистрация</a></button>
+            </div>      
+        </div>
+    </form>
+</body>
+</html>
